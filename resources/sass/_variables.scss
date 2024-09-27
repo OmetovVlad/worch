@@ -1,0 +1,17 @@
+body:root {
+	--bg-color-main: #f2f2f7;
+	--bg-color-helped: #d9d9df;
+	--bg-color-secondary: #fff;
+	--border-color: #e5e5ea;
+	--text-color-main: #000000;
+	--text-color-placeholder: #8e8e93;
+}
+
+$color_1: var(--text-color-main);
+$color_2: #fff;
+$color_3: var(--text-color-placeholder);
+$color_4: #007aff;
+$color_5: #dc3545;
+$font-family_1: 'Roboto, sans-serif';
+$background-color_1: var(--bg-color-main);
+$background-color_2: var(--bg-color-secondary);
