@@ -6,6 +6,7 @@
 		<header>
 			<h3 class="left">Эксперты</h3>
 			<div class="right balance">{{$balance}} Wö</div>
+			<div class="right deposit"><a href="{{ route('deposit') }}">Пополнить</a></div>
 		</header>
 
 		<main class="choice_edit">

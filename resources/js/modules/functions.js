@@ -272,3 +272,16 @@ function deleteVariant() {
 	const variantAddButton = document.querySelector('.variant__add');
 	variantAddButton.classList.remove('hide');
 }
+
+
+export function validateDepositForm() {
+	const depositSum = document.querySelector('form > main > input.deposit_sum');
+	depositSum.addEventListener("input", updateDepositValue);
+}
+
+function updateDepositValue() {
+	const depositButton = document.querySelector('#depositButton');
+	const depositSum = document.querySelector('form > main > input.deposit_sum');
+
+	depositButton.disabled = !(depositSum.value >= 10);
+}

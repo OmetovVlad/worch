@@ -144,6 +144,19 @@ body header {
 	}
 	.right {
 		margin-left: auto;
+		&.deposit {
+			margin-left: 10px;
+			a {
+				display: block;
+				text-decoration: none;
+				font-size: 13px;
+				padding: 5px 10px;
+				line-height: 1;
+				background: #53158a;
+				color: #fff;
+				border-radius: 3px;
+			}
+		}
 	}
 	h3, .h3 {
 		font-size: 20px;
@@ -185,7 +198,9 @@ body footer button:disabled {
 	pointer-events: none;
 }
 
-body input[type=text],body textarea {
+body input[type=text],
+body input[type=number],
+body textarea {
 	display: block;
 	width: 100%;
 	padding: 12px 16px;

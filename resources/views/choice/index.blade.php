@@ -7,6 +7,7 @@
 		<header>
 			<h3 class="left">New choice</h3>
 			<div class="right balance">{{$balance}} Wö</div>
+			<div class="right deposit"><a href="{{ route('deposit') }}">Пополнить</a></div>
 		</header>
 
 		<main class="choice_new">

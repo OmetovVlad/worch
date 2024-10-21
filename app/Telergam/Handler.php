@@ -24,7 +24,7 @@ class Handler extends WebhookHandler
 
 
 //		$chat->photo('../public/assets/img/bot_main.jpg')
-		if (strtolower($choice) != '/start') {
+		if (strtolower($choice) != '') {
 
 			function isValidUuid( $uuid ) {
 				if (!is_string($uuid) || (preg_match('/^[a-f\d]{8}(-[a-f\d]{4}){4}[a-f\d]{8}$/i', $uuid) !== 1)) {

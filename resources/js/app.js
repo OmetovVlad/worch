@@ -40,3 +40,7 @@ if (document.querySelector('main.choice_edit')) {
 if (document.querySelector('main.expert_new')) {
 	functions.newExpertPage();
 }
+
+if (document.querySelector('main.deposit_page')) {
+	functions.validateDepositForm();
+}

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ChoiceController;
+use App\Http\Controllers\DepositController;
 use App\Http\Controllers\ExpertController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
@@ -15,6 +16,8 @@ Route::post('/', [ChoiceController::class, 'create'])->name('choice.create');
 Route::get('/choices/show/{choice}', [ChoiceController::class, 'show'])->name('choice.show');
 Route::get('/choices/edit/{choice}', [ChoiceController::class, 'edit'])->name('choice.edit');
 Route::post('/choices/update/{choice}', [ChoiceController::class, 'update'])->name('choice.update');
+
+Route::get('/deposit', [DepositController::class, 'index'])->name('deposit');
 
 //Route::get('choices', [ChoiceController::class, 'index']);
 

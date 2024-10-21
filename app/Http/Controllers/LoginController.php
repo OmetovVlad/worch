@@ -16,6 +16,8 @@ class LoginController extends Controller
 {
     public function login(Request $request) {
 
+//		dd($request);
+
 		$chat_data = TgChat::where([['chat_id', '=', $request->user]])->first();
 		$chat = TelegraphChat::find($chat_data->id);
 		$user_data = $chat->memberInfo($request->user)->user();
